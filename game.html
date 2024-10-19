@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>iPhoneマジック「トランプの謎」 - 本編</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scroll-container">
+        <div class="text-section">あ</div>
+        <div class="text-section">あなたが選んだのはトランプの</div>
+        <div class="text-section" id="card-display"></div>
+    </div>
+
+    <!-- 透明なボタン：トランプのマーク -->
+    <button class="invisible-button" id="spade"></button>
+    <button class="invisible-button" id="heart"></button>
+    <button class="invisible-button" id="club"></button>
+    <button class="invisible-button" id="diamond"></button>
+
+    <!-- 透明なボタン：トランプの数字 -->
+    <div id="number-buttons">
+        <!-- 数字ボタンはJavaScriptで動的に生成します -->
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
