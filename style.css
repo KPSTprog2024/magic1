@@ -1,0 +1,123 @@
+/* 共通のスタイル */
+body {
+    margin: 0;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    font-family: sans-serif;
+}
+
+#scroll-container {
+    display: flex;
+    width: 300vw; /* スクロール可能な幅を確保 */
+}
+
+.text-section {
+    flex: 0 0 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    height: 100vh;
+    text-align: center;
+}
+
+#card-display {
+    font-size: 2em;
+}
+
+/* トップページのスタイル */
+.top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-button {
+    font-size: 2em;
+    padding: 20px 40px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+/* 透明なボタン */
+.invisible-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+#spade {
+    top: 0;
+    left: 0;
+}
+
+#heart {
+    top: 0;
+    right: 0;
+}
+
+#club {
+    bottom: 0;
+    left: 0;
+}
+
+#diamond {
+    bottom: 0;
+    right: 0;
+}
+
+#number-buttons {
+    display: none;
+}
+
+.number-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* 練習用モードのボタン */
+.visible-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: none;
+    opacity: 0.5;
+    padding: 0;
+}
+
+.visible-button#spade {
+    background-color: black;
+}
+
+.visible-button#heart {
+    background-color: red;
+}
+
+.visible-button#club {
+    background-color: green;
+}
+
+.visible-button#diamond {
+    background-color: blue;
+}
+
+.visible-number-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: orange;
+    opacity: 0.5;
+    padding: 0;
+    font-size: 1em;
+    color: white;
+}
