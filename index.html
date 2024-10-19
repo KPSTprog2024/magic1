@@ -2,15 +2,39 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>iPhoneマジック「トランプの謎」 - トップページ</title>
+    <title>トランプマークの謎</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="top-container">
-        <h1>iPhoneマジック「トランプの謎」</h1>
-        <button class="main-button" onclick="location.href='game.html'">やってみる</button>
-        <button class="main-button" onclick="location.href='practice.html'">ためす</button>
+    <div id="scroll-container">
+        <div id="text-content">
+            <!-- 文章を一文字ずつ表示 -->
+            <span class="text-letter">あ</span>
+            <span class="text-letter">な</span>
+            <span class="text-letter">た</span>
+            <span class="text-letter">が</span>
+            <span class="text-letter">選</span>
+            <span class="text-letter">ん</span>
+            <span class="text-letter">だ</span>
+            <span class="text-letter">の</span>
+            <span class="text-letter">は</span>
+            <span class="text-letter">ト</span>
+            <span class="text-letter">ラ</span>
+            <span class="text-letter">ン</span>
+            <span class="text-letter">プ</span>
+            <span class="text-letter">の</span>
+            <!-- マーク表示用の要素 -->
+            <span class="text-letter" id="suit-display"></span>
+        </div>
     </div>
+
+    <!-- 透明なボタン：トランプのマーク -->
+    <button class="invisible-button" id="spade-button"></button>
+    <button class="invisible-button" id="heart-button"></button>
+    <button class="invisible-button" id="club-button"></button>
+    <button class="invisible-button" id="diamond-button"></button>
+
+    <script src="script.js"></script>
 </body>
 </html>
