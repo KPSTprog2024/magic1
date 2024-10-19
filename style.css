@@ -1,48 +1,32 @@
-/* 共通のスタイル */
 body {
     margin: 0;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    font-family: sans-serif;
+    padding: 0;
+    overflow: hidden;
 }
 
 #scroll-container {
-    display: flex;
-    width: calc(100vw * 15); /* 文字数に応じて幅を調整 */
-}
-
-.text-section {
-    flex: 0 0 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10em;
-    height: 100vh;
-    text-align: center;
-    line-height: 1;
-}
-
-#card-display {
-    font-size: 5em;
-}
-
-/* トップページのスタイル */
-.top-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    white-space: nowrap;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    width: 100vw;
     height: 100vh;
 }
 
-.main-button {
-    font-size: 2em;
-    padding: 20px 40px;
-    margin: 20px;
-    cursor: pointer;
+#text-content {
+    display: inline-block;
+    font-size: 10vw; /* 画面幅の10% */
+    line-height: 100vh; /* 画面の高さに合わせて中央揃え */
+    white-space: nowrap;
 }
 
-/* 透明なボタン */
+.text-letter {
+    display: inline-block;
+}
+
+#suit-display {
+    display: inline-block;
+}
+
 .invisible-button {
     position: fixed;
     width: 50px;
@@ -50,79 +34,24 @@ body {
     background: transparent;
     border: none;
     padding: 0;
-    z-index: 1000;
 }
 
-#spade {
+#spade-button {
     top: 0;
     left: 0;
 }
 
-#heart {
+#heart-button {
     top: 0;
     right: 0;
 }
 
-#club {
+#club-button {
     bottom: 0;
     left: 0;
 }
 
-#diamond {
+#diamond-button {
     bottom: 0;
     right: 0;
-}
-
-#number-buttons {
-    display: none;
-}
-
-.number-button {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    border: none;
-    padding: 0;
-    z-index: 1000;
-}
-
-/* 練習用モードのボタン */
-.visible-button {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    border: none;
-    opacity: 0.5;
-    padding: 0;
-    z-index: 1000;
-}
-
-.visible-button#spade {
-    background-color: black;
-}
-
-.visible-button#heart {
-    background-color: red;
-}
-
-.visible-button#club {
-    background-color: green;
-}
-
-.visible-button#diamond {
-    background-color: blue;
-}
-
-.visible-number-button {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    border: none;
-    background-color: orange;
-    opacity: 0.5;
-    padding: 0;
-    font-size: 1em;
-    color: white;
-    z-index: 1000;
 }
