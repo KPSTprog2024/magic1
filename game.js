@@ -16,10 +16,10 @@ const numbers = {
 };
 
 // マークのボタンにイベントリスナーを追加
-document.getElementById('spade').addEventListener('touchstart', () => selectSuit('spade'));
-document.getElementById('heart').addEventListener('touchstart', () => selectSuit('heart'));
-document.getElementById('club').addEventListener('touchstart', () => selectSuit('club'));
-document.getElementById('diamond').addEventListener('touchstart', () => selectSuit('diamond'));
+document.getElementById('spade').addEventListener('click', () => selectSuit('spade'));
+document.getElementById('heart').addEventListener('click', () => selectSuit('heart'));
+document.getElementById('club').addEventListener('click', () => selectSuit('club'));
+document.getElementById('diamond').addEventListener('click', () => selectSuit('diamond'));
 
 function selectSuit(suit) {
     selectedSuit = suits[suit];
@@ -52,7 +52,7 @@ function displayNumberButtons() {
         button.style.left = `${x}px`;
         button.style.top = `${y}px`;
         button.dataset.number = i;
-        button.addEventListener('touchstart', selectNumber);
+        button.addEventListener('click', selectNumber);
         numberButtonsContainer.appendChild(button);
     }
 
@@ -62,7 +62,7 @@ function displayNumberButtons() {
     centerButton.style.left = `${window.innerWidth / 2 - 25}px`;
     centerButton.style.top = `${window.innerHeight / 2 - 25}px`;
     centerButton.dataset.number = 13;
-    centerButton.addEventListener('touchstart', selectNumber);
+    centerButton.addEventListener('click', selectNumber);
     numberButtonsContainer.appendChild(centerButton);
 }
 
